@@ -1,7 +1,144 @@
 body {
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  color: #000000;
-  font-weight: bold;
   font-family: "PT Sans Narrow", sans-serif;
+  color: #000000;
 }
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.features-item {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+}
+
+.main-footer {
+  margin-top: 65px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+}
+
+.footer-copyrights {
+  float: right;
+  width: 180px;
+}
+
+.catalog-header {
+  margin-bottom: 39px;
+}
+
+.inner-head {
+  margin-bottom: 60px;
+}
+
+.catalog-main {
+  margin-bottom: 45px;
+}
+
+.catalog-filter {
+  float: left;
+  width: 180px;
+}
+
+.catalog-list {
+  float: right;
+  width: 710px;
+
+  font-size: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: top;
+  width: 220px;
+  height: 286px;
+  margin-right: 20px;
+}
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-footer {
+  margin-top: 50px;
+}
+
+.item-content-left{
+  float:left;
+  width: 480px;
+}
+
+.item-content-right{
+  float: right;
+  width: 400px;
+}
+
+
