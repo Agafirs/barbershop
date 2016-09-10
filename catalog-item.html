@@ -3,30 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Набор для путешествий &laquo;Baxter of California&raquo;</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
- <header class="catalog-header">
+<body class="inner-page">
+  <header class="main-header">
    <div class="container clearfix">
-    <nav class="main-navigation">
-      <ul>
-        <li class="logo">
-          <a href="index.html">
-            <img src="img/catalog-logo.png" width="111" height="24" alt="Логотип Барбершопа">
-          </a>
-        </li>
+     <nav class="main-navigation">
+     <a class="logo-inner" href="index.html"><img src="img/catalog-logo.png" width="111" height="24" alt="Логотип Барбершопа"></a>
+       <ul>
         <li>
-          <a href="#">Информаия</a>
+          <a href="#">Информация</a>
         </li>
         <li>
           <a href="#">Новости</a>
         </li>
         <li>
-          <a href="#">Прайс-лист</a>
+          <a href="price-list.html">Прайс-лист</a>
         </li>
-        <li>
-          <a href="#">Магазин</a>
+        <li class="active">
+          <a>Магазин</a>
         </li>
         <li>
           <a href="#">Контакты</a>
@@ -34,12 +31,12 @@
       </ul>
     </nav>
     <div class="user-block">
-      <a class="login" href="#">Войти</a>
+      <a class="login" href="#">Вход</a>
     </div>
   </div>
 </header>
 <main class="container">
-  <div class="inner-header">
+  <div class="inner-page-title">
     <h1>Набор для путешествий &laquo;Baxter of California&raquo;</h1>
     <ul class="breadcrumbs">
      <li>
@@ -51,14 +48,14 @@
      <li>
        <a href="catalog.html">Средства для ухода</a>
      </li>
-     <li class="active">Набор для путешествий &laquo;Baxter of California&raquo;</li>
+     <li class="current">Набор для путешествий &laquo;Baxter of California&raquo;</li>
    </ul>
  </div>
- <div class="container clearfix">
+ <div class="item-description clearfix">
    <div class="item-content-left">
-    <div class="main-image">
-      <img src="img/item-main-image.jpg" width="460" height="498" alt="Фото товара">
-    </div>
+
+      <img class="main-image" src="img/item-main-image.jpg" width="460" height="498" alt="Фото товара">
+
     <div class="thumbs">
       <img src="img/item-thumb-1.jpg" width="140" height="149" alt="Фото товара">
       <img src="img/item-thumb-2.jpg" width="140" height="149" alt="Фото товара">
@@ -66,11 +63,11 @@
     </div>
   </div>
   <div class="item-content-right">
-    <div class="item-status">
-      <p>Есть в наличии</p>
-      <p class="artiсle">Артикул: Dexter-Ae</p>
+    <div class="item-status clearfix">
+      <p class="availability">Есть в наличии</p>
+      <p class="article-name">Артикул: Dexter-Ae</p>
     </div>
-    <p class="item-description">
+    <p class="item-text-description">
       Travel Kit - необходимый аксессуар во время любого путешествия.
       В аккуратной кожаной сумке находится все, что нужно для бриться и
       ухода за кожей во время рабочей поездки или отдыха: средство для
@@ -80,7 +77,7 @@
 
     <div class="buy-item">
       <span class="price">2900 руб.</span>
-      <a href="#" class="btn">Купить</a>
+      <a href="#" class="btn btn-buy">Купить</a>
     </div>
     <div class="item-set">
       <p>В набор входят:</p>
@@ -95,8 +92,7 @@
   </div>
 </div>
 </main>
-
-<footer class="catalog-footer">
+<footer class="main-footer inner-footer">
   <div class="container clearfix">
     <section class="footer-contacts">
       Барбершоп «Бородинский»<br>
@@ -112,7 +108,7 @@
     </section>
     <section class="footer-copyrights">
      <p>Разработано:</p>
-     <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+     <a class="btn" href="https://htmlacademy.ru">HTMLAcademy.ru</a>
    </section>
  </div>
 </footer>
