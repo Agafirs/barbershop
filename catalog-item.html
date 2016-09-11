@@ -119,9 +119,10 @@
   <form class="login-form" action="#" method="post">
    <input class="login-icon" type="text" name="login" placeholder="Логин">
    <input class="password-icon" type="password" name="password" placeholder="Пароль">
-   <label class="remember-checkbox">
-     <input type="checkbox" name="remember">
-     <span class="checkbox-indicator"></span>
+
+   <input id="remember" type="checkbox" name="remember">
+   <label for="remember" class="remember-checkbox" >
+     <span class="checkbox-modal-indicator"></span>
      Запомните меня
    </label>
    <a class="restore" href="#">Я забыл пароль!</a>
