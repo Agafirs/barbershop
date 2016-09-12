@@ -99,10 +99,10 @@
       <p class="index-content-title">Записаться</p>
       <p class="record-description">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
       <form class="appointment-form" action="#" method="post">
-        <input type="text" name="date" placeholder="Дата">
-        <input type="text" name="time" placeholder="Время">
-        <input type="text" name="name" placeholder="Ваше имя">
-        <input type="tel" name="phone" placeholder="Телефон">
+        <input type="text" name="date" placeholder="Дата" required>
+        <input type="text" name="time" placeholder="Время" required>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
@@ -129,14 +129,14 @@
  </div>
 </footer>
 <div class="modal-content">
-  <button class="modal-content-close" type="submit" title="Закрыть">Закрыть</button>
+  <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
   <h2 class="modal-content-title">Личный кабинет</h2>
   <p>Введите пожалуйста свой логин и пароль</p>
   <form class="login-form" action="#" method="post">
    <input class="login-icon" type="text" name="login" placeholder="Логин">
    <input class="password-icon" type="password" name="password" placeholder="Пароль">
 
-   <input id="remember" type="checkbox" name="remember">
+   <input id="remember" type="checkbox" name="remember" checked>
    <label for="remember" class="remember-checkbox" >
      <span class="checkbox-modal-indicator"></span>
      Запомните меня
@@ -146,10 +146,14 @@
  </form>
 </div>
 <div class="modal-map">
-   <button class="modal-content-close" type="submit">Закрыть</button>
-   <div class="modal-map-content"></div>
+ <button class="modal-content-close" type="button">Закрыть</button>
+ <div class="yandex-map">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1473684186377" width="766" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+ </div>
 </div>
 <div class="modal-overlay"></div>
+<script src="js/popup.js"></script>
+
 </body>
 </html>
 

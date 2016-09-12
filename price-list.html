@@ -111,14 +111,14 @@
  </div>
 </footer>
 <div class="modal-content">
-  <button class="modal-content-close" type="submit" title="Закрыть">Закрыть</button>
+  <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
   <h2 class="modal-content-title">Личный кабинет</h2>
   <p>Введите пожалуйста свой логин и пароль</p>
   <form class="login-form" action="#" method="post">
    <input class="login-icon" type="text" name="login" placeholder="Логин">
    <input class="password-icon" type="password" name="password" placeholder="Пароль">
 
-   <input id="remember" type="checkbox" name="remember">
+   <input id="remember" type="checkbox" name="remember" checked>
    <label for="remember" class="remember-checkbox" >
      <span class="checkbox-modal-indicator"></span>
      Запомните меня
@@ -127,11 +127,10 @@
    <button class="btn" type="submit">Войти</button>
  </form>
 </div>
-<div class="modal-map">
-   <button class="modal-content-close" type="submit">Закрыть</button>
-   <div class="modal-map-content"></div>
-</div>
 <div class="modal-overlay"></div>
+<script src="js/popup.js"></script>
+</body>
+</html>
 </body>
 </html>
 
